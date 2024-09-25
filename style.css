@@ -1,0 +1,128 @@
+:root {
+  --gray: rgb(140, 140, 140);
+  --white: rgb(240, 240, 240);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: black;
+  color: var(--gray);
+
+  font-weight: 500;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2.5rem 0;
+}
+
+.header-left-web-logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.display-mode-button {
+  border-radius: 50px;
+  height: 1.8rem;
+  width: 3rem;
+  margin-left: 1rem;
+  border: none;
+
+  cursor: pointer;
+  background-color: var(--white);
+
+  transition: all 0.10s;
+}
+
+.display-mode-button:hover {
+  opacity: 80%;
+}
+
+.display-mode-image {
+  height: 1.2rem;
+  margin-top: 3px;
+}
+
+.header-right-navigation {
+  margin-left: 1rem;
+
+  font-size: 1.1rem;
+}
+
+.header-left-web-logo,
+.header-right-navigation,
+.content-date {
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.10s;
+}
+
+.content:hover>.content-date,
+.header-left-web-logo:hover,
+.header-right-navigation:hover {
+  color: var(--white);
+}
+
+.web-title {
+  color: var(--white);
+  font-size: 8rem;
+  font-weight: bold;
+  display: block;
+}
+
+.web-description {
+  font-size: 1.3rem;
+}
+
+.content-container {
+  margin-top: 4rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--gray);
+  color: var(--white);
+  min-height: 2.9rem;
+  max-height: auto;
+  margin-bottom: 1rem;
+}
+
+.content-name {
+  font-size: 1.5rem;
+}
+
+.content-date {
+  color: var(--gray);
+  font-size: 1.1rem;
+  text-wrap: nowrap;
+  padding-left: 0.5rem;
+
+}
+
+footer {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
